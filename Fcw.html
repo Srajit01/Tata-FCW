@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAS TATA ELXSI GenAI - Advanced Driver Assistance Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="/api/placeholder/50/50" alt="ADAS Logo" class="h-10 w-10 mr-3">
+                <span class="font-bold text-xl">ADAS GenAI</span>
+            </div>
+            <div class="space-x-4">
+                <a href="#home" class="hover:text-blue-200">Home</a>
+                <a href="#features" class="hover:text-blue-200">Features</a>
+                <a href="#solution" class="hover:text-blue-200">Solution</a>
+                <a href="#contact" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Advanced Driver Assistance GenAI</h1>
+            <p class="text-xl mb-8">Accelerating ADAS Software Development with Generative AI</p>
+            <div class="space-x-4">
+                <a href="#solution" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-100">
+                    Learn More
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white px-6 py-3 rounded-full hover:bg-white hover:text-blue-600">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Key Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <div class="text-5xl text-blue-600 mb-4">🤖</div>
+                    <h3 class="font-bold text-xl mb-4">GenAI Code Generation</h3>
+                    <p>Automated code generation for ADAS features using advanced AI techniques</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <div class="text-5xl text-blue-600 mb-4">🛡️</div>
+                    <h3 class="font-bold text-xl mb-4">Compliance Checking</h3>
+                    <p>Automatic verification of MISRA and ASPICE automotive software standards</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <div class="text-5xl text-blue-600 mb-4">🧪</div>
+                    <h3 class="font-bold text-xl mb-4">Automated Testing</h3>
+                    <p>Comprehensive test case generation and validation for ADAS features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Workflow -->
+    <section id="solution" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Solution Workflow</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <canvas id="workflowChart"></canvas>
+                </div>
+                <div>
+                    <ol class="border-l-4 border-blue-600">
+                        <li class="mb-10 ml-6">
+                            <span class="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">1</span>
+                            <h3 class="font-bold text-xl">Requirements Input</h3>
+                            <p>Define ADAS feature specifications and safety requirements</p>
+                        </li>
+                        <li class="mb-10 ml-6">
+                            <span class="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">2</span>
+                            <h3 class="font-bold text-xl">AI Code Generation</h3>
+                            <p>Generate compliant source code using generative AI</p>
+                        </li>
+                        <li class="mb-10 ml-6">
+                            <span class="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">3</span>
+                            <h3 class="font-bold text-xl">Compliance Validation</h3>
+                            <p>Automated checking of automotive software standards</p>
+                        </li>
+                        <li class="ml-6">
+                            <span class="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">4</span>
+                            <h3 class="font-bold text-xl">Test Case Generation</h3>
+                            <p>Create comprehensive test scenarios for validation</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg">
+                <form>
+                    <div class="mb-4">
+                        <label class="block mb-2">Name</label>
+                        <input type="text" class="w-full p-2 rounded border" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Email</label>
+                        <input type="email" class="w-full p-2 rounded border" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Message</label>
+                        <textarea class="w-full p-2 rounded border" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ADAS GenAI Solutions. All Rights Reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-300">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Workflow Chart Script -->
+    <script>
+        const ctx = document.getElementById('workflowChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Requirements', 'Code Generation', 'Compliance', 'Testing'],
+                datasets: [{
+                    data: [25, 25, 25, 25],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 99, 132, 0.7)', 
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 206, 86, 0.7)'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
